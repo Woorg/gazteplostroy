@@ -1,0 +1,140 @@
+.section-cost
+	background $color-white 
+	&__in
+		padding-top 58px
+		padding-bottom 36px
+	&__title
+		color $color-blue
+		text-align center
+	&__subtitle
+		margin-bottom 35px
+		color $color-darkgray
+		text-align center
+	&__list
+		margin-bottom 6px
+	&__i
+		margin-bottom 38px
+		display table
+		min-height 94px
+		clearfix()
+		&:last-child
+			margin-bottom 0
+	&__type
+		width 666px
+		display table-cell
+		vertical-align middle
+		box-shadow inset 2.5px 4.3px 8px rgba(1, 1, 1, 0.25)
+		&-w
+			position relative
+			padding-right 220px
+			padding-top 39px
+			padding-bottom 30px
+			padding-left 23px
+			color $color-darkgray 
+			clearfix()
+	&__type
+		&-title
+			float left
+			font-it(18px,21px)
+			
+		&-price
+			position absolute
+			top 50%
+			right 69px
+			margin-top -19px
+			font-bld(30px,1)
+			sub
+				vertical-align bottom
+				font-bld(18px,1)
+	&__i
+		&_2
+			.section-cost__type-price
+				right 47px
+	&__order
+		margin-top 14px
+		margin-left 26px
+		margin-bottom 55px
+		margin-right 24px 
+		&:last-child
+			margin-bottom 0
+		&-w
+			display table-cell
+			width 334px 
+			.button
+				margin-bottom 4px
+				min-height 59px
+				padding 10px 12px 
+				font-bld(18px,21px)
+				text-align center
+		&-note
+			font-extbld(14px,1)
+			color $color-darkgray
+			text-align center 
+	&__example
+		position relative
+		margin-bottom 13px 
+		margin-right 29px
+		margin-left 24px
+		padding 11px 0 10px 12px  
+		background-color #eaeaea
+		clearfix()
+		&-text
+			font-reg(14px,18px)
+			color $color-darkgray
+		&-price
+			position absolute
+			top 50%
+			right 21px
+			margin-top -15px
+			font-bld(30px,1)
+			sub
+				vertical-align bottom
+				font-bld(18px,1)
+	&__total
+		margin-bottom 23px
+		padding-top 26px
+		padding-bottom 25px
+		min-height 81px
+		background $color-blue
+		&-title
+			text-align center
+			color $color-white
+			font-bld(24px,1)
+			text-transform uppercase
+			span
+				font-bld(30px,1)
+			sub
+				font-bld(18px,1)
+				vertical-align bottom
+				text-transform none
+	&__i
+		&_2
+			.section-cost__order			
+				margin-top 20px
+
+.included
+	padding 23px 69px 21px 75px
+	margin 0 auto 18px 
+	width 429px
+	min-height 131px 	
+	color $color-darkgray
+	box-shadow inset 2.5px 4.3px 8px rgba(1, 1, 1, 0.25)
+	&__title
+		margin-bottom 3px
+		font-it(18px,22px)
+	&__i
+		position relative
+		margin-bottom 7px
+		padding-left 10px
+		font-reg(14px, 16px)
+		&:before
+			position absolute
+			content ''
+			top 50%
+			left 0
+			margin-top -1px
+			width 3px 
+			height 1px
+			background $color-darkgray 
+		 
+			

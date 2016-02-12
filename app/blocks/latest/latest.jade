@@ -1,0 +1,52 @@
+mixin latest()
+	+b('section').section-latest#latest
+		+e.in
+			+e('h2').title НАШИ ПОСЛЕДНИЕ РАБОТЫ
+			+e('ul').list
+				+e('li').i
+					+e.col._obj
+						+e.i-img
+							//- +e('img')(src='#' alt='photo')
+						+e.i-title Дом 50 м2
+						+b('ul').obj-params
+							+e('li').i
+								+e('span').title Адрес дома:
+							+e('li').i
+								+e('span').title Проложили:
+								| 20 м трубопровода
+							+e('li').i Сделали проект со сметой
+							+e('li').i
+								+e('span').title Время работы:
+								| 45 дней
+							+e('li').i
+								+e('span').title Стоимость:
+								| 50 000 руб.
+					+e.col._feedback
+						+e.feedback-w
+							+e('h3').feedback-title Отзыв владельца - Сергея:
+							+e.feedback-text Текст текст текст
+						+b('a').button._feedback.js_popup(href='#popup-1') У вас такой же дом?
+
+				+e('li').i
+					+e.col._obj
+						+e.i-img
+							//- +e('img')(src='#' alt='photo')
+						+e.i-title Дом 50 м2
+						+b('ul').obj-params
+							+e('li').i
+								+e('span').title Адрес дома:
+							+e('li').i
+								+e('span').title Проложили:
+								| 20 м трубопровода
+							+e('li').i Сделали проект со сметой
+							+e('li').i
+								+e('span').title Время работы:
+								| 45 дней
+							+e('li').i
+								+e('span').title Стоимость:
+								| 50 000 руб.
+					+e.col._feedback
+						+e.feedback-w
+							+e('h3').feedback-title Отзыв владельца - Сергея:
+							+e.feedback-text Текст текст текст
+						+b('a').button._feedback.js_popup(href='#popup-1') У вас такой же дом?

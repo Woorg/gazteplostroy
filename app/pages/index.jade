@@ -1,0 +1,35 @@
+include ../blocks/hero/hero
+include ../blocks/services/services
+include ../blocks/stats/stats
+include ../blocks/what/what
+include ../blocks/process/process
+include ../blocks/latest/latest
+include ../blocks/how/how
+include ../blocks/cost/cost
+include ../blocks/warning/warning
+include ../blocks/guarantee/guarantee
+include ../blocks/questions/questions
+include ../blocks/where/where
+include ../blocks/where/where
+include ../blocks/form-questions/form-questions
+
+
+extends ../blocks/layout-default/layout-default
+
+block head
+	- var pageTitle = 'Газтеплострой - группа компаний';
+
+block content
+	+hero()
+	+services()
+	+stats()
+	+what()
+	+process()
+	+latest()
+	+how()
+	+cost()
+	+warning()
+	+guarantee()
+	+questions()
+	+where()
+	+form-questions()

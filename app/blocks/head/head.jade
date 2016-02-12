@@ -1,0 +1,23 @@
+head
+	meta(charset='utf-8')
+	meta(name='viewport' content='width=device-width')
+	meta(http-equiv='X-UA-Compatible' content='IE=edge')
+	meta(name='imagetoolbar' content='no')
+	meta(name='msthemecompatible' content='no')
+	meta(name='cleartype' content='on')
+	meta(name='HandheldFriendly' content='True')
+
+	meta(name='format-detection' content='telephone=no')
+	meta(name='format-detection' content='address=no')
+
+	link(rel='manifest' href='assets/icons/manifest.json')
+
+
+	block head
+	title= pageTitle || ''
+	meta(name='description' content=pageDescription || '')
+	meta(name='keywords' content=pageKeywords || '')
+
+	link(href='assets/styles/app.min.css?t=' + timestamp rel='stylesheet')
+		
+	| <!--[if lt IE 9]><script src="assets/scripts/html5shiv.min.js"></script><![endif]-->

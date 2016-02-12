@@ -1,0 +1,23 @@
+- var pageScripts = pageScripts || [[], [], []];
+
+include ../../../node_modules/bemto.jade/bemto.jade
+include ../header/header
+include ../footer/footer
+include ../scripts/scripts
+
++script([], ['app.min.js'])
+
+doctype html
+| <!--[if lt IE 8]><html class="ie7" lang="ru"><![endif]-->
+| <!--[if IE 8]><html class="ie8" lang="ru" ><![endif]-->
+| <!--[if IE 9]><html class="ie9" lang="ru" ><![endif]-->
+| <!--[if gt IE 9]><!-->
+html(lang="ru")
+	| <!--<![endif]-->
+	include ../head/head
+	body
+		+header()
+		block content
+		+footer()
+
+		+scripts()

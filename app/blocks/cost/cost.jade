@@ -1,0 +1,50 @@
+mixin cost()
+	+b('section').section-cost#cost
+		+e.in
+			+e('h2').title СТОИМОСТЬ РАБОТ
+			+e('h3').subtitle Узнайте точную стоимость газификации Вашего дома
+			+e('ul').list
+				+e('li').i
+					+e.type
+						+e.type-w
+							+e.type-title Разработка проекта газоснабжения дома
+							+e.type-price 3 500 <sub>руб.</sub>
+					+e.order-w
+						+e.order
+							+b('a').button.js_popup(href='#popup-1') Заказать консультацию <br/>по разработке проекта
+							+e('p').order-note Это бесплатно
+
+				+e('li').i._2
+					+e.type
+						+e.type-w
+							+e.type-title Монтаж газопровода
+							+e.type-price <sub>от</sub> 35 000 <sub>руб.</sub>
+						+e.example
+							+e.example-text Например: <br/>10 – 20 м работы + материалы
+							+e.example-price <sub>от</sub> 35 000 <sub>руб.</sub>
+						+e.example
+							+e.example-text Например: <br/>21 – 30 м работы + материалы
+							+e.example-price <sub>от</sub> 55 000 <sub>руб.</sub>
+						+e.example
+							+e.example-text Например: <br/>31 – 40 м работы + материалы
+							+e.example-price <sub>от</sub> 65 000 <sub>руб.</sub>
+					+e.order-w
+						+e.order
+							+b('a').button.js_popup(href='#popup-1') Заказать консультацию <br/>по разработке проекта
+							+e('p').order-note Это бесплатно
+						+e.order
+							+b('a').button.js_popup(href='#popup-1') Заказать консультацию <br/>по разработке проекта
+							+e('p').order-note Это бесплатно
+		+e.total
+			+e('h2').total-title Общая стоимость <sub>от</sub> <span>35 000</span> <sub>руб.</sub>
+
+		+b.included
+			+e.title В стоимость входит:
+			+e('ul').ul
+				+e('li').i пусконаладочные работы,
+				+e('li').i оформляется итоговый акт готовности,
+				+e('li').i акты земельных работ, разграничения.
+
+
+
+

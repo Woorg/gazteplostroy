@@ -1,0 +1,52 @@
+body
+	position relative
+	background $color-white
+	font-reg(14px,18px)
+	color $color-gray
+	cursor default
+	min-width 1000px
+
+.in
+	margin auto
+	width 1000px
+
+
+.header,
+.footer,
+.form-questions
+	&__in
+		@extend .in
+
+
+.section
+	&-hero,
+	&-services,
+	&-stats,
+	&-what,
+	&-process,
+	&-latest,
+	&-how,
+	&-cost,
+	&-warning,
+	&-guarantee,
+	&-questions,
+	&-where,
+	&-form-questions
+		&__in
+			@extend .in
+		&__title
+			font-extbld(30px,24px)
+			color $color-darkgray
+		&__subtitle
+			font-reg(14px,24px)
+			color $color-gray
+
+
+::-webkit-input-placeholder
+	color #7d7d7d
+:-moz-placeholder  /* Firefox 18- */
+	color #7d7d7d
+::-moz-placeholder  /* Firefox 19+ */
+	color #7d7d7d
+:-ms-input-placeholder
+	color #7d7d7d

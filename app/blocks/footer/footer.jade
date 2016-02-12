@@ -1,0 +1,32 @@
+mixin footer()
+	+b('footer').footer
+		+e.in
+			+e.left
+				+e.logo ГАЗТЕПЛОСТРОЙ
+				+e.slogan Газификация жилых домов и помещений <br/>Новосибирск и область
+				+e.name ООО «ййцуу»
+				+e.ogrn ОГРН 11111111111
+				+e.address Адрес:
+			+e.right
+				+b.contacts
+					+e.title Есть вопросы? Звоните:
+					+e.phone +7(499) 123 1212
+					+e.text Часы работы: ПН-ВС 9:00-21:00
+					+b('a').button.js_popup(href='#popup-1' title='Позвоните нам бесплатно') Позвоните нам бесплатно
+
+	+b.m-context
+		+e.content <span>Разработка продающих сайтов: </span>
+			+e('a').a(href="http://m-context.ru/" target="_blank")
+
+
+
+
+	+b.form._popup.mfp-hide#popup-1
+		+e('h1').title БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ <br/>по строительству газопровода
+		+e('p').text Введите свой телефон и получите <br/>полную консультацию по прокладке газпровода <br/>в Вашем доме от специалиста
+		+e.input
+			+e('label').label(for='phone') Введите телефон:
+			+e('input')(type='text' placeholder='8 (910) 777-77-77' value='' id='phone')
+		+e.submit
+			+e('input')(type='submit' value='Получить консультацию')
+		+e('p').note Заполнение заявки Вас ни к чему не обязывает! <br/>Вы сможете отказаться в любой момент!

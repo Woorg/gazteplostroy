@@ -1,0 +1,14 @@
+mixin warning()
+	+b('section').section-warning
+		+e.in
+			+e('h2').title ВНИМАНИЕ!
+			+e('h3').subtitle Сдача проека газификации осуществляется ТОЛЬКО при наличии газового оборуодования дома <br/>То есть без котла сдать газопровод нельзя!
+			+e('ul').list
+				+e('li').i
+					+e.type
+						+e.type-img
+							+e('img')(src='assets/images/content/boilers-img-1.jpg')
+						+e.type-title Мы так же занимаемся <br/>продажей и установкой газовых котлов
+					+e.order
+						+b('a').button.js_popup(href='#popup-1') Заказать консультацию <br/>по разработке проекта
+						+e('p').order-note Это бесплатно

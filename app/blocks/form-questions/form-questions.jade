@@ -1,0 +1,16 @@
+mixin form-questions()
+	+b.form-questions
+		+e.in
+			+b.form._questions
+				+e('h1').title Остались вопросы?
+				+e('p').text Введите свой вопрос и через 15 минут <br/>Вам ответит Наш менеджер:
+				+e.textarea
+					+e('label').label(for='textarea') Ваш вопрос:
+					+e('textarea')(id='textarea')
+				+e.input
+					+e('label').label(for='phone-3') Введите телефон:
+					+e('input')(type='text' placeholder='' value='' id='phone-3')
+				+e.submit
+					+e('input')(type='submit' value='отправить вопрос!')
+			+e.top
+				+e('a').top-a(href='#top') НАВЕРХ

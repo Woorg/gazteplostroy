@@ -1,0 +1,60 @@
+.section-what
+	background $color-white 
+	&__in
+		padding-top 59px
+		padding-bottom 33px
+		text-align center
+	&__title
+		margin-bottom 34px
+	&__list
+		margin-bottom 38px
+		font-size 0
+		text-align left
+	&__i
+		display inline-block
+		vertical-align top
+		width 25%
+		&-icon
+			position relative
+			margin 0 auto 8px 
+			size 121px 117px
+			background-color $color-blue 
+			box-shadow inset 2.5px 4.3px 8px rgba(1, 1, 1, 0.25)
+			border-radius 50%
+			&:after
+				position absolute
+				content ''
+				top 50%
+				left 50%
+		&-title
+			font-reg(14px,17px)
+			text-align center
+		&_1
+			.section-what__i-icon
+				&:after
+					margin-top -32px
+					margin-left -32px
+					sprite($what_icon_1)
+		&_2
+			.section-what__i-icon
+				&:after
+					margin-top -31px
+					margin-left -31px
+					sprite($what_icon_2)
+		&_3
+			.section-what__i-icon
+				&:after	
+					margin-top -31px
+					margin-left -31px
+					sprite($what_icon_3)
+		&_4
+			.section-what__i-icon
+				&:after	
+					margin-top -31px
+					margin-left -31px
+					sprite($what_icon_4)
+	&__subtitle
+		font-extbld(18px,21px)
+		color $color-blue
+		
+	

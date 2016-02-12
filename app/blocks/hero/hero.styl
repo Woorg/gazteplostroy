@@ -1,0 +1,77 @@
+.section-hero
+	background url(../images/hero.jpg) 50% 0 no-repeat
+	background-size cover
+	&__in
+		position relative
+		height 382px
+		clearfix()
+	&__title
+		margin-top 47px
+		margin-right 450px
+		margin-bottom 18px
+		margin-left 0
+		display inline-block
+		text-indent -9999px
+		sprite($title)
+		span
+			padding 0 5px
+			background rgba(0,0,0,.5)
+			font-lght(58px,82px)
+			color $color-white
+			box-decoration-break clone
+	&__text
+		margin-right 620px
+		margin-bottom 20px
+		font-bld(24px,26px)
+		color $color-white
+		text-shadow 0.5px 0.9px 1px rgba(1, 1, 1, 0.9)
+
+.form
+	background $color-blue
+	text-align center
+	color $color-white
+	&__title
+		margin-bottom 15px
+		font-bld(18px,21px)
+	&__text
+		margin-bottom 13px
+		font-reg(14px,18px)
+	&__label
+		margin-bottom 7px
+		display block
+		font-it(12px,1)
+		text-align left
+	&__input
+		margin 0 20px 8px
+		input
+			border none
+			width 294px
+			height 38px
+			display inline-block
+			font-reg(18px,38px)
+			color #7d7d7d
+			text-align center
+	&__submit
+		margin 0 20px 6px
+		input
+			border none
+			padding 0 14px
+			display inline-block
+			height 37px
+			background $color-darkgray
+			font-bld(18px,37px)
+			color $color-white
+			text-transform uppercase
+			&:hover
+				background #FFED00
+	&__note
+		font-reg(10px, 12px)
+	&_consultation
+		position absolute
+		top 49px
+		right 0
+		padding 20px 30px 7px 30px
+		width 394px
+		min-height 284px
+		&-2
+			top 188px
